@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مملكة السرد</title>
+    <link rel="icon" href="Website.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="script.js"></script>
+  </head>
+<body>
+  <header>
+    <div class="location">
+      <a href="الموقع.html">
+        <img src="Website.jpg" alt="صورة الموقع" height="50" width="50">
+        <h1>مملكة السرد</h1>
+      </a>
+    </div>
+  </header>
+  <aside class="aside-page">
+      <form action="" method="post" onsubmit="return validatePassword()">
+      <label for="username">اسم المستخدم:</label>
+      <input type="text" id="username" name="username" required placeholder="أدخل اسم المستخدم"><br>
+      <label for="">أدخل اسم الحساب</label>
+      <input type="text" id="account_name" name="account_name" required placeholder="أدخل اسم الحساب"><br>
+      <label for="account_name">اسم الحساب:</label>
+      <input type="email" id="email" name="email" required placeholder="أدخل البريد الإلكتروني"><br>
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="password" id="password" name="password" required placeholder="أدخل كلمة المرور"><br>
+      <label for="password">كلمة المرور:</label>
+      <label for="confirm_password">تأكيد كلمة المرور:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required placeholder="تأكيد كلمة المرور"><br>
+      <label for="birth_date">تاريخ الميلاد:</label>
+      <input type="text" id="birth_date" name="birth_date" placeholder="اختر تاريخ الميلاد" required><br>
+      <label>نوع الحساب:</label>
+      <input type="radio" id="reader" name="account_type" value="reader" required>
+      <label for="reader">قارئ</label>
+      <input type="radio" id="writer" name="account_type" value="writer">
+      <label for="writer">كاتب</label><br>
+      <label for="phone_number">رقم الهاتف:</label>
+      <input type="tel" id="phone_number" name="phone_number" placeholder="أدخل رقم الهاتف"><br>
+      <button type="submit">انشاء حساب</button>
+      </form>
+      <p>
+        <a href="تسجيل دخول.html">تسجيل دخول</a>
+      </p>
+  </aside>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("#birth_date", {
+      dateFormat: "Y-m-d",
+      locale: {
+        weekdays: {
+          shorthand: ["أحد", "إثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
+          longhand: ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
+        },
+        months: {
+          shorthand: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+          longhand: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+        },
+      }
+    });
+  </script>
+</body>
+</html>

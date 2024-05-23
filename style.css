@@ -1,0 +1,106 @@
+/* تصميم الصندوق الخاص بالفئة */
+.category-box {
+  border: 1px solid #ccc;
+  padding: 10px;  
+  margin: 20px;
+}
+
+.account-links {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  pointer-events: none; /* يمنع التفاعل مع العنصر */
+}
+
+.category-box ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-box a {
+  display: block; 
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  margin: 5px;
+  text-align: center;
+  pointer-events: none; /* يمنع التفاعل مع العنصر */
+
+}
+
+/* تصميم الروابط الخاصة بالحساب */
+.account-links {
+  color: black;
+  text-align: left;
+}
+
+/* إذا كنت تريد ضبط العناصر في أعلى الصفحة، يمكنك استخدام القيمة الصحيحة لـ top */
+.account-links {
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+/* إذا كانت .location عنصرًا مستقلاً، استخدم display: block بدلاً من display: inline-block */
+.account-links {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  user-select: none; /* يمنع تحديد النص */
+  pointer-events: none; /* يمنع التفاعل مع العنصر */
+}
+
+
+/* يبدو أنه يفتقر لقيمة لـ text-align */
+.User {
+  float: left;
+  font-size: 14px;
+  text-align: center; /* تحديد القيمة المناسبة لمحاذاة النص */
+  margin-left: 150px; /* تعديل حسب الحاجة لموازنة الموقع */
+}
+
+.search {
+  text-align: center;
+  margin-left: auto; /* يدفع هذا العنصر إلى النهاية اليمنى */
+  top: 50px; /* قد تحتاج إلى تعديله حسب التخطيط الفعلي */
+}
+/* تصميم زر رفع الملف */
+input[type="file"]::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+input[type="file"]::before {
+  content: 'رفع صورة';
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* يجب تحديد خاصية text-align لتحديد محاذاة النص داخل الجدول */
+/* تم تصحيح tr-align إلى text-align */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center; /* لتوسيط النص داخل الجدول */
+}
+
+th {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.data {
+  width: 100%; /* يمكنك ضبط العرض حسب احتياجاتك */
+  height: 20px; /* يمكنك ضبط الارتفاع حسب احتياجاتك */
+  margin-left: 10px; /* إضافة مسافة بين النص وعناصر progress */
+}
